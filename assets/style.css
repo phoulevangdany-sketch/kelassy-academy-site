@@ -677,10 +677,14 @@ body { background: var(--white); }
   .page-hero--media .wrap { padding-top: 64px; }
 }
 
-/* Signature Qualiopi : cartouche blanc, logo officiel intact, mention des catégories certifiées */
-.qualiopi-card { display: inline-block; background: #fff; border-radius: 10px; padding: 16px 18px 14px; max-width: 320px; margin-top: 18px; text-align: left; }
-.qualiopi-card img { display: block; width: 170px; height: auto; }
-.qualiopi-card p, .site-footer .qualiopi-card p { margin: 12px 0 4px; font-family: "DM Sans", Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.45; color: #1e1e1e; }
-.qualiopi-card ul, .site-footer .qualiopi-card ul { list-style: none; margin: 0; padding: 0; display: block; }
-.qualiopi-card li, .site-footer .qualiopi-card li { margin: 0; font-family: "DM Sans", Arial, sans-serif; font-size: 12px; font-weight: 700; line-height: 1.45; color: #000091; text-transform: uppercase; letter-spacing: .01em; }
+/* Signature Qualiopi : cartouche blanc, logo officiel intact, mention des catégories ; clic = certificat PDF */
+.qualiopi-card { display: inline-block; background: #fff; border-radius: 8px; padding: 10px 12px; max-width: 250px; margin-top: 16px; text-align: left; text-decoration: none; transition: box-shadow .2s, transform .2s; }
+.qualiopi-card:hover, .qualiopi-card:focus-visible { box-shadow: 0 6px 18px rgba(0, 0, 0, .25); transform: translateY(-1px); }
+.qualiopi-card:focus-visible { outline: 2px solid #F7C141; outline-offset: 3px; }
+.qualiopi-card img { display: block; width: 130px; height: auto; }
+.qualiopi-card span { display: block; font-family: "DM Sans", Arial, sans-serif; font-size: 10px; line-height: 1.4; letter-spacing: 0; text-transform: none; }
+.qualiopi-card .qc-mention { margin-top: 8px; color: #1e1e1e; font-weight: 400; }
+.qualiopi-card .qc-mention + .qc-cat { margin-top: 3px; }
+.qualiopi-card .qc-cat { color: #000091; font-weight: 700; text-transform: uppercase; white-space: nowrap; }
+.qualiopi-card .qc-dl { margin-top: 6px; color: #4a5568; text-decoration: underline; }
 .qualiopi-card--light { box-shadow: 0 0 0 1px rgba(9, 36, 69, .14); }
